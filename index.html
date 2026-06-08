@@ -68,11 +68,20 @@
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
-<!-- Firebase config — loaded from separate gitignored file -->
-<script src="config.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyA_pPDqaUDifAqVU9HhEdDGGrQpW-KBiY0",
+    authDomain: "jobapplicationwebsite-79dfb.firebaseapp.com",
+    databaseURL: "https://jobapplicationwebsite-79dfb-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "jobapplicationwebsite-79dfb",
+    storageBucket: "jobapplicationwebsite-79dfb.firebasestorage.app",
+    messagingSenderId: "942444762404",
+    appId: "1:942444762404:web:2b011ae17f9715beeb4fb1",
+    measurementId: "G-CZJ33R0F7Z"
+  };
+</script>
 
 <script>
-  // firebaseConfig is defined in config.js (gitignored — never commit that file)
   firebase.initializeApp(firebaseConfig);
   const auth = firebase.auth();
   const db   = firebase.database();
